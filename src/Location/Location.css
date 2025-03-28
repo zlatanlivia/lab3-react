@@ -1,0 +1,104 @@
+.location-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .location-title {
+    font-size: 1.7rem;
+    color: #333;
+    text-align: left;
+    margin-bottom: 2rem;
+    font-weight: 550;
+  }
+  
+  .location-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 6px;
+    width: 100%;
+  }
+  
+  .location-card {
+    position: relative;
+    width: 400px;
+    height: 280px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .location-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .location-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+  }
+  
+  .location-name {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .reserve-button {
+    align-self: flex-start;
+    background-color: #1b7ed4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 2.5rem;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .reserve-button:hover {
+    background-color: #1155a2;
+  }
+  
+  @media (max-width: 1250px) {
+    .location-cards {
+      grid-template-columns: repeat(2, 390px); 
+    }
+  }
+  
+  @media (max-width: 850px) {
+    .location-cards {
+      grid-template-columns: 390px; 
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .location-card {
+      width: 100%;
+      height: 280px;
+    }
+    
+    .location-name {
+      font-size: 1.4rem; 
+    }
+    
+    .reserve-button {
+      padding: 4px 16px;
+      font-size: 0.9rem; 
+    }
+  }
+  

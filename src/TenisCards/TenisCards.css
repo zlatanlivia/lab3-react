@@ -1,0 +1,76 @@
+.tenis-cards-container {
+    max-width: 1300px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    padding-bottom: 50px;
+  }
+  
+  .city-group {
+    margin-bottom: 3rem;
+  }
+  
+  .city-header {
+    font-size: 1.8rem;
+    color: #000000;
+    padding-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #000000;
+  }
+  
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+  }
+  
+  @media (max-width: 1024px) {
+    .tenis-cards-container {
+      padding: 0 1rem;
+    }
+  
+    .city-header {
+      font-size: 1.7rem;
+      text-align: center;
+    }
+  
+    .cards-grid {
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Ajustează coloanele pe tablete */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cards-grid {
+      grid-template-columns: 1fr; /* Pe ecrane mai mici (smartphone), toate cardurile vor fi pe o coloană */
+    }
+    
+    .city-header {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .tenis-cards-container {
+      padding: 0 1rem; /* Ajustăm padding-ul pentru a economisi spațiu */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .city-header {
+      font-size: 1.3rem; /* Micșorăm titlul pe ecrane foarte mici */
+    }
+  
+    .cards-grid {
+      grid-template-columns: 1fr; /* O singură coloană pe telefoane mici */
+      gap: 1rem; /* Micșorăm distanța între carduri pe dispozitivele mobile */
+    }
+  
+    .tenis-cards-container {
+      padding: 0 0.5rem; /* Reducem padding-ul pentru telefoane mici */
+    }
+  }
+  

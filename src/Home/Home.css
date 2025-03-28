@@ -1,0 +1,126 @@
+.home-container {
+    height: auto !important;
+    min-height: unset !important;
+    margin-bottom: 200px;
+  }
+  
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 78vh;
+    padding: 0 6rem;
+    padding-left: calc((100% - 80%) / 2 + 2rem);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 0;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  .hero-title {
+    font-family: 'Hedvig Letters Serif', serif;
+    font-size: 5rem;
+    line-height: 1.2;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.704);
+    margin-bottom: 3rem;
+    font-weight: 200;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    white-space: pre-line;
+  }
+  
+  .divider {
+    width: 120px;
+    height: 4px;
+    background-color: white;
+    margin: 2rem 0;
+    position: relative;
+    z-index: 1;
+    display: none;
+  }
+  
+  .discover-button {
+    font-family: 'Montserrat', sans-serif;
+    padding: 1.2rem 2.5rem;
+    font-size: 1.3rem;
+    font-weight: 200;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .discover-button:hover {
+    background-color: #1d1d1d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  @media (max-width: 1024px) {
+    .hero-section {
+      padding: 0 3rem;
+    }
+  
+    .hero-title {
+      font-size: 4rem;
+    }
+  
+    .discover-button {
+      font-size: 1.2rem;
+      padding: 1rem 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section {
+      padding: 0 2rem;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-title {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .discover-button {
+      font-size: 1.1rem;
+      padding: 1rem 2rem;
+    }
+  
+    .divider {
+      display: block;
+      margin: 1rem auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+  
+    .discover-button {
+      font-size: 1rem;
+      padding: 0.8rem 1.5rem;
+    }
+  }
+  

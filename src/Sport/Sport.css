@@ -1,0 +1,128 @@
+.sport-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .sport-title {
+    font-size: 1.7rem;
+    color: #333;
+    text-align: left;
+    margin-bottom: 2.2rem;
+    font-weight: 550;
+  }
+  
+  .sport-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    justify-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .sport-card {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .sport-image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .sport-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .sport-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .sport-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    color: white;
+  }
+  
+  .sport-name {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .sport-more-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    margin-top: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .sport-card:hover .sport-image {
+    transform: scale(1.1);
+  }
+  
+  .sport-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  @media (max-width: 1200px) {
+    .sport-cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .sport-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .sport-cards {
+      grid-template-columns: 1fr;
+    }
+  
+    .sport-card {
+      width: 100%;
+      max-width: 350px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sport-title {
+      font-size: 1.4rem;
+    }
+  
+    .sport-card {
+      width: 100%;
+      height: auto;
+      max-width: 320px;
+    }
+  
+    .sport-name {
+      font-size: 1.5rem;
+    }
+  
+    .sport-more-text {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,129 @@
+
+.anunt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin: 3rem auto;
+    max-width: 1200px;
+  }
+  
+  .anunt-title {
+    font-size: 1.6rem;
+    font-weight: 550;
+    color: #000000;
+    margin-bottom: 2rem;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: -70px;
+  }
+  
+  .anunt-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .anunt-image {
+    width: 100%;
+    max-width: 900px; 
+    height: auto;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .anunt-arrow {
+    font-size: 2.5rem; 
+    color: #2c3e50;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .anunt-arrow:hover {
+    color: #000000;
+  }
+  
+  .anunt-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .anunt-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #aaa;
+    transition: background-color 0.3s ease;
+  }
+  
+  .anunt-dot.active {
+    background-color: #2c3e50;
+  }
+  
+
+
+  @media (max-width: 1250px) {
+    .anunt-title {
+      font-size: 1.5rem;
+      margin-left: 0; 
+    }
+  
+    .anunt-image {
+      max-width: 80%; 
+    }
+  
+    .anunt-content {
+      gap: 15px; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .anunt-container {
+      align-items: center;
+      text-align: center;
+      margin: 2rem auto; 
+    }
+  
+    .anunt-title {
+      font-size: 1.8rem;
+      margin-left: 0; 
+    }
+  
+    .anunt-content {
+      flex-direction: column;
+      gap: 10px; 
+    }
+  
+    .anunt-image {
+      max-width: 100%; 
+      height: auto; 
+    }
+  
+    .anunt-arrow {
+      font-size: 2rem; 
+    }
+  
+    .anunt-dots {
+      margin-top: 15px;
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    .anunt-title {
+      font-size: 1.6rem; 
+    }
+  
+    .anunt-arrow {
+      font-size: 1.8rem; 
+    }
+  
+    .anunt-dot {
+      width: 8px;
+      height: 8px; 
+    }
+  }
+  

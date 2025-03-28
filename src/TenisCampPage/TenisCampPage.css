@@ -1,0 +1,66 @@
+.tenis-camp-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .tenis-title-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tenis-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: -30px;
+    margin-top: 160px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  }
+  
+  .tenis-main-title {
+    font-size: 4.2rem !important;
+    margin-bottom: 1.5rem !important;
+    white-space: normal !important;
+  }
+  
+  .choose-section {
+    margin-top: -170px;
+    padding: 0 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .tenis-main-title {
+      font-size: 2.5rem !important;
+      margin-bottom: 1rem !important;
+    }
+  
+    .tenis-subtitle {
+      font-size: 1rem;
+      margin-top: 100px;
+      margin-bottom: 0;
+    }
+  
+    .choose-section {
+      margin-top: -140px;
+      padding: 0 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tenis-main-title {
+      font-size: 1.8rem !important;
+      margin-bottom: 1rem !important;
+    }
+  
+    .tenis-subtitle {
+      font-size: 0.85rem;
+      margin-top: 80px;
+    }
+  
+    .choose-section {
+      margin-top: -110px;
+      padding: 0 10px;
+    }
+  }
+  
